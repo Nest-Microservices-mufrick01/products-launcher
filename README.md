@@ -5,7 +5,11 @@ De esta forma podemos levantar el gateway + microservicios + base de datos con u
 ## dev
 1. clonar
 2. renombrar `.env.template` a `.env` y configurar variables de entorno
-3. Levantar docker
+3. reconstruir submodulos
+```bash
+git submodule update --init --recursive
+```
+4. Levantar docker
 ```bash
 docker compose up --build
 ```
